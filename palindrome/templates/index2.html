@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    {% if is_palindrome %}
+        <p>The number {{ number }} is a palindrome!</p>
+    {% else %}
+        <p>The number {{ number }} is NOT a palindrome.</p>
+    {% endif %}
+    <a href="{% url 'index' %}">Go back</a>
+</body>
+</html>
